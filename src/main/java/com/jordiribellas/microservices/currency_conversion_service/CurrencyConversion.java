@@ -1,5 +1,7 @@
 package com.jordiribellas.microservices.currency_conversion_service;
 
+import java.math.BigDecimal;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,10 +16,11 @@ import lombok.ToString;
 public class CurrencyConversion {
 
 	private Long id;
-	private String from;
-	private String to;
-	private double quantity;
-	private double conversionMultiple;
-	private double totalCalculatedAmount;
-	private String enviorment;
+    private String from;
+    private String to;
+    private BigDecimal quantity;
+    private BigDecimal conversionMultiple;
+    private BigDecimal totalCalculatedAmount;
+    private String environment;
+    
 }
